@@ -7,7 +7,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
 body {
@@ -859,7 +858,7 @@ blockquote {
   overflow-x: hidden;
 }
 .nav-solid {
-  height: 90px;
+  height: 130px;
   -webkit-transition: height 0.3s ease-in-out;
   -o-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
@@ -2399,6 +2398,13 @@ span.psw {
   .cancelbtn {
      width: 100%;
   }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
 }
 
 

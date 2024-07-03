@@ -8,15 +8,13 @@ body {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
-  
+}
+body {
   background: #fff;
   font-size: 14px;
   font-family: 'Lato', sans-serif;
   color: #542E71;
 }
-
-
-/**/
 a {
   color: #ed5f5e;
   text-decoration: none;
@@ -2389,3 +2387,113 @@ span.psw {
      width: 100%;
   }
 }
+
+
+/* shopping-cart */
+
+
+.shopping-cart{
+   position: fixed;
+   top:0%; right:-110%;
+   width: 35rem;
+   z-index: 1100;
+   background-color: #F5F5F5;
+   height: 100vh;
+   overflow-y: hidden;
+}
+
+.shopping-cart.active{
+   right: 0;
+}
+
+.shopping-cart #close-cart{
+   text-align: right;
+}
+
+.shopping-cart #close-cart span{
+   cursor: pointer;
+   font-size: 15px;
+   color: #542E71;
+   padding-right: 20px;
+   font-family: prompt;
+}
+
+.shopping-cart #close-cart span:hover{
+   color:red;
+}
+
+.shopping-cart .box{
+   display: flex;
+   position: relative;
+   align-items: center;
+   gap:1.5rem;
+   border-radius: .5rem;
+   box-shadow: gray;
+   padding:1.5rem;
+   background-color: white;
+   margin: 10px;
+}
+v
+.shopping-cart .box .fa-times{
+   position: absolute;
+   top:1.2rem; right:1.2rem;
+   font-size: 15px;
+   cursor: pointer;
+   color:red;
+   font-family: prompt;
+}
+
+.shopping-cart .box .fa-times:hover{
+   color:black;
+}
+
+.shopping-cart .box img{
+   width: 7rem;
+}
+
+.shopping-cart .box .content p{
+   font-size: 15px;
+   color:var(--light-color);
+}
+
+.shopping-cart .box .content p span{
+   color:var(--red);
+}
+
+.shopping-cart .box .content form{
+   margin-top: 1.5rem;
+   display: flex;
+   gap:1rem;
+}
+
+.shopping-cart .box .content form .qty{
+  border-color: #542E71;
+   border: 1px;
+   border-radius: .5rem;
+   padding:1rem;
+   font-size: 1.8rem;
+   color:#542E71;
+   width: 8rem;
+}
+
+.shopping-cart .box .content form .fa-edit{
+   width: 5.5rem;
+   font-size: 1.7rem;
+   cursor: pointer;
+   border-radius: .5rem;
+   background-color: white;
+   color:black;
+}
+
+.shopping-cart .box .content form .fa-edit:hover{
+   background-color: black;
+   color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}
+
